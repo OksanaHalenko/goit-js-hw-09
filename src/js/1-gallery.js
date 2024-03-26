@@ -80,4 +80,7 @@ function createGallery(arr) {
         .join("");
 }
 gallery.insertAdjacentHTML("beforeend", createGallery(images));
+import SimpleLightbox from "simplelightbox";
+const lightboxGallery = new SimpleLightbox('.gallery a');
+lightboxGallery.open();
 
