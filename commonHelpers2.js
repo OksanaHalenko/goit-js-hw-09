@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                      */const r=document.querySelector(".feedback-form");r.querySelector("textarea");r.querySelector("input");r.addEventListener("submit",a);function a(e){e.preventDefault;const t=e.target.elements.email.value,o=e.target.elements.message.value;console.log(t),console.log(o),t&&o&&(console.log({email:t,message:o}),localStorage.removeItem("feedback-form-state"),e.currentTarget.reset())}
+//# sourceMappingURL=commonHelpers2.js.map
