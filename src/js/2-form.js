@@ -4,13 +4,12 @@ let formState;
 getFormInput();
 form.addEventListener("submit", handelSubmit);
 form.addEventListener("input", onFormInput);
-
 function handelSubmit(event) {
-    event.preventDefault;
+    event.preventDefault();
     const email = event.target.elements.email.value;
     const message = event.target.elements.message.value;
     if (email && message) {
-        console.log({ email, message });
+                console.log({ email, message });
         localStorage.removeItem("feedback-form-state");
         event.currentTarget.reset();
 }
